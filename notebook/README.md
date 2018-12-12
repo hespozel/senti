@@ -33,4 +33,5 @@ Just fork this kernel and play around.You can select:
 
 At the end one table is generated with the results for each model and the blended result for all models
 
-https://github.com/hespozel/senti/blob/master/notebook/images/modelresults.PNG?raw=true
+
+![Notebook Results](https://github.com/hespozel/senti/blob/master/notebook/images/modelresults.PNG?raw=true)
