@@ -19,7 +19,8 @@ ___
 
 ## Model Development
 
-* [Model Development](https://github.com/hespozel/senti/edit/master/notebook)
+* [Model Development Kaggle](https://www.kaggle.com/hespozel/testing-platform-choose-and-run/versions)
+* [Model Development Local](https://github.com/hespozel/senti/edit/master/notebook)
 
 The model development was all developed under Kaggle´s kernel environment. This was the most challenge and time consuming effort. The model development was created to help me with real data for my master at PUC.  The objective of my master is to evaluate different deep learning approaches to process natural language in sentiment analysys.
 
@@ -62,7 +63,7 @@ The applications is developed in python 33.6 using [Flask]http://flask.pocoo.org
 ## Testing Model Development
 
 Lastest versions of the model development notebooks are available under kernels kaggle and can be access here:
-*[Kaggle Insincere - Question Platform](https://www.kaggle.com/hespozel/testing-platform-choose-and-run)
+*[Kaggle Insincere - Question Platform](https://www.kaggle.com/hespozel/testing-platform-choose-and-run/versions)
 
 Also a local automated test was developed to test ipython notebooks( api and model load and run).
 *[Model Testing](https://github.com/hespozel/senti/edit/master/tests)
@@ -71,7 +72,7 @@ Also a local automated test was developed to test ipython notebooks( api and mod
 
 * [Web Application and API Testing](https://github.com/hespozel/senti/edit/master/webapp/tests)
 
-Unit and Functional Tests were developed to test the Web Application. The [pytest](https://docs.pytest.org/en/latest/) platform was used to create the tests.
+* Unit and Functional Tests were developed to test the Web Application. The [pytest](https://docs.pytest.org/en/latest/) platform was used to create the tests.
 
 ## Testing the API
 1. Activate virtual environment created
