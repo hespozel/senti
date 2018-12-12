@@ -13,7 +13,7 @@ All project was based in a Kaggle Competition - Quora Insincere Questions Classi
 * [Model Development](https://github.com/hespozel/senti/edit/master/notebook)
 * [REST API](https://github.com/hespozel/senti/edit/master/api)
 * [Web Application](https://github.com/hespozel/senti/edit/master/webapp)
-* [Model Testing](https://github.com/hespozel/senti/edit/master/tests)
+* [Model Testing](https://github.com/hespozel/senti/edit/master/test)
 * [Web Application and API Testing](https://github.com/hespozel/senti/edit/master/webapp/tests)
 ___
 
