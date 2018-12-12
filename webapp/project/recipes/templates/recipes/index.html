@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>Sentinela!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../static/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/signin.css" rel="stylesheet" />
+	<script src="../static/js/ie-emulation-modes-warning.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+		  <div class="header clearfix">
+			<nav>
+			  <ul class="nav nav-pills pull-right">
+				    {% if current_user.is_authenticated %}
+                        <li role="presentation"><a href="{{ url_for('recipes.index') }}">Ola  {{ current_user.email }} !</a></li>
+						<li role="presentation"><a href="{{ url_for('users.logout') }}">Logout</a></li>
+						<li role="presentation"><a href="/test">Teste</a></li>
+                    {% endif %}
+                     <li role="presentation"><a href="{{ url_for('recipes.index') }}">Home</a></li>
+					<li role="presentation"><a href="https://github.com/hespozel/senti">Github</a></li>
+                    
+			  </ul>
+			</nav>
+			<a href="/"><img src="static/images/logo.png" /></a>
+		 </div>
+
+		<div class="jumbotron">
+			<h1 class="lead" align="center">Muito Fácil !</h1>
+			<!-- <h2 class="form-signin-heading" align="center">Sign up</h2> -->
+			<p class="lead" align="center">Classifique comentários agora com o Sentinela</p>
+
+        
+			{% if current_user.is_authenticated %}
+				<div class="row" align="center">
+									<p><a class="btn btn-lg btn-success" href="{{ url_for('recipes.test') }}" role="button" align="center">Teste com os seus comentários</a></p>
+				</div>
+			{% else %}
+							
+				<div class="row" align="center">
+						<div class="col-sm-6" align="right">
+							<p><a class="btn btn-lg btn-success" href="{{ url_for('users.register') }}" role="button">Cadastre-se</a></p>
+						</div>
+						<div class="col-sm-6" align="left">
+							<p><a class="btn btn-lg btn-success" href="{{ url_for('users.login') }}" role="button">   Login    </a></p>
+						</div>
+				</div>
+									
+			{% endif %}
+        
+		</div>
+
+      <!-- <div class="row " align="center> -->
+        <!-- <div class="col-lg-6" align="center"> -->
+          <!-- <p>Classificação Simples</p> -->
+          <!-- <p>Muito Facil Classificar Comentários. Cria sua conta e começe a usar ja !</p> -->
+        <!-- </div> -->
+		 <!-- <div class="col-lg-6" align="center"> -->
+          <!-- <p>Contato:</p> -->
+          <!-- <p>Heraldo Espozel - hespozel@gmail.com</p> -->
+        <!-- </div> -->
+
+
+
+      <footer class="footer">
+        <p>&copy; 2018 PUC-RJ</p>
+      </footer>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../static/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

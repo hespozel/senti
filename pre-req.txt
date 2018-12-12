@@ -1,0 +1,65 @@
+
+cd ~
+gedit .bash_aliases
+alias python='/usr/bin/python3'
+
+sudo apt update
+sudo apt install python3.6
+sudo apt install python3.6-dev
+sudo apt install python3.6-venv
+wget https://bootstrap.pypa.io/get-pip.py
+sudo python3.6 get-pip.py
+sudo ln -s /usr/bin/python3.6 /usr/local/bin/python3
+sudo ln -s /usr/local/bin/pip /usr/local/bin/pip3
+
+## Create virtualenvs
+cd ~/.virtualenvs
+
+virtualenv -p python3 vsenti
+
+# activate virtualenv
+
+source vsenti/bin/activate
+or 
+cd vsanti
+source bin/activate
+
+pip3 install -r requirements.txt
+
+pip3 install flask
+pip3 install flask-restful
+
+sudo apt-get install python3-tk
+sudo apt-get install linuxbrew_wrapper
+sudo apt-get install httpie
+
+# Install Jupyter Notebook
+sudo apt-get -y install ipython ipython-notebook
+sudo -H pip3 install jupyter
+
+Inside Virtualenb
+pip3 install tornado
+pip3 install ipykernel
+ipython kernel install --user --name=vsenti
+
+Run Notebook
+jupyter notebook
+
+### Create shared dir in vbox
+mkdir Toxic
+sudo mount -t vboxsf Toxic  ~/toxic
+
+## Libraries Necessary to model development
+pip3 install tqdm
+pip3 install keras
+pip3 install pandas
+pip3 install sklearn
+pip3 install tensorflow
+pip3 install nltk
+pip3 install gensim
+pip3 install matplotlib
+pip3 install scikit-plot
+
+
+#Libraries necessary to Webapp
+pip3 install flask_sqlalchemy

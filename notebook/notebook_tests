@@ -1,0 +1,2 @@
+jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=60\ 
+                  --output out_file in_file
