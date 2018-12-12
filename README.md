@@ -38,7 +38,7 @@ This objective of this module was to make available developed machine-learning m
 
 The objective of this module is to make available to overall users the usage of the Machine Learning developed Model. It is a very simple Web application that allow the creation of a user credention that permits the submmission of questions. This questions will be not be answered !!!! But will be classified as Sincere (closes to o) or Insincere (closes to 1) accordling to the model developed.
 
-The applications is developed in python 33.6 using [Flask]http://flask.pocoo.org/ microframework .
+The applications is developed in python 33.6 using [Flask](http://flask.pocoo.org/) framework .
 
 ## File Structure
 * senti/api
@@ -63,10 +63,10 @@ The applications is developed in python 33.6 using [Flask]http://flask.pocoo.org
 ## Testing Model Development
 
 Lastest versions of the model development notebooks are available under kernels kaggle and can be access here:
-*[Kaggle Insincere - Question Platform](https://www.kaggle.com/hespozel/testing-platform-choose-and-run/versions)
+* [Kaggle Insincere - Question Platform](https://www.kaggle.com/hespozel/testing-platform-choose-and-run/versions)
 
 Also a local automated test was developed to test ipython notebooks( api and model load and run).
-*[Model Testing](https://github.com/hespozel/senti/edit/master/tests)
+* [Model Testing](https://github.com/hespozel/senti/edit/master/tests)
 
 ## Testing Web Applications and API Testing
 
